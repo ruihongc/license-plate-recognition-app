@@ -1,0 +1,12 @@
+torch
+torchvision
+numpy
+opencv-contrib-python-headless
+easyocr
+ultralytics
+pandas
+pyarrow
+streamsync
+mjpeg_streamer
+websocket-client[optional]
+rapidfuzz

@@ -1,0 +1,649 @@
+{
+    "metadata": {
+        "streamsync_version": "0.3.0"
+    },
+    "components": {
+        "root": {
+            "id": "root",
+            "type": "root",
+            "content": {
+                "appName": "License Plate Recognition"
+            },
+            "parentId": null,
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "c0f99a9e-5004-4e75-a6c6-36f17490b134": {
+            "id": "c0f99a9e-5004-4e75-a6c6-36f17490b134",
+            "type": "page",
+            "content": {
+                "pageMode": "compact",
+                "emptinessColor": "#e9eef1"
+            },
+            "parentId": "root",
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "d4a5e62c-c6fe-49c4-80d4-33862af8727d": {
+            "id": "d4a5e62c-c6fe-49c4-80d4-33862af8727d",
+            "type": "columns",
+            "content": {},
+            "parentId": "7wlp9p5g0dkv6gvb",
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "f3777e75-3659-4d44-8ef7-aeec0d06855b": {
+            "id": "f3777e75-3659-4d44-8ef7-aeec0d06855b",
+            "type": "column",
+            "content": {
+                "title": "",
+                "width": "1",
+                "contentHAlign": "center",
+                "contentVAlign": "center"
+            },
+            "parentId": "d4a5e62c-c6fe-49c4-80d4-33862af8727d",
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "lsx863h0dfa2tcvi": {
+            "id": "lsx863h0dfa2tcvi",
+            "type": "dataframe",
+            "content": {
+                "dataframe": "@{results}",
+                "enableSearch": "yes",
+                "enableDownload": "yes",
+                "showIndex": "no",
+                "displayRowCount": "8"
+            },
+            "parentId": "oby1tt50nzp8pplf",
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "fmjq1afd9ny4dxnj": {
+            "id": "fmjq1afd9ny4dxnj",
+            "type": "horizontalstack",
+            "content": {},
+            "parentId": "f3777e75-3659-4d44-8ef7-aeec0d06855b",
+            "position": 1,
+            "handlers": {},
+            "visible": true
+        },
+        "8wupn9xr2kkzmovg": {
+            "id": "8wupn9xr2kkzmovg",
+            "type": "button",
+            "content": {
+                "text": "Play",
+                "isDisabled": "@{running}"
+            },
+            "parentId": "fmjq1afd9ny4dxnj",
+            "position": 0,
+            "handlers": {
+                "ss-click": "play"
+            },
+            "visible": true
+        },
+        "487y0yq2e8jrpwbe": {
+            "id": "487y0yq2e8jrpwbe",
+            "type": "button",
+            "content": {
+                "text": "Stop"
+            },
+            "parentId": "fmjq1afd9ny4dxnj",
+            "position": 1,
+            "handlers": {
+                "ss-click": "cancel"
+            },
+            "visible": true
+        },
+        "oby1tt50nzp8pplf": {
+            "id": "oby1tt50nzp8pplf",
+            "type": "column",
+            "content": {
+                "width": "1"
+            },
+            "parentId": "d4a5e62c-c6fe-49c4-80d4-33862af8727d",
+            "position": 1,
+            "handlers": {},
+            "visible": true
+        },
+        "qsghi2fa132kgbql": {
+            "id": "qsghi2fa132kgbql",
+            "type": "image",
+            "content": {
+                "src": "@{image}",
+                "caption": ""
+            },
+            "parentId": "f3777e75-3659-4d44-8ef7-aeec0d06855b",
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "7n2uvsjpb34flrbg": {
+            "id": "7n2uvsjpb34flrbg",
+            "type": "tabs",
+            "content": {},
+            "parentId": "c0f99a9e-5004-4e75-a6c6-36f17490b134",
+            "position": 1,
+            "handlers": {},
+            "visible": true
+        },
+        "7wlp9p5g0dkv6gvb": {
+            "id": "7wlp9p5g0dkv6gvb",
+            "type": "tab",
+            "content": {
+                "name": "Dashboard"
+            },
+            "parentId": "7n2uvsjpb34flrbg",
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "6ve9ilwsvz35zzs1": {
+            "id": "6ve9ilwsvz35zzs1",
+            "type": "tab",
+            "content": {
+                "name": "Settings"
+            },
+            "parentId": "7n2uvsjpb34flrbg",
+            "position": 1,
+            "handlers": {},
+            "visible": true
+        },
+        "jigxejyjnmqqyg4x": {
+            "id": "jigxejyjnmqqyg4x",
+            "type": "columns",
+            "content": {},
+            "parentId": "6ve9ilwsvz35zzs1",
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "wepo9e9hxf9cpzln": {
+            "id": "wepo9e9hxf9cpzln",
+            "type": "column",
+            "content": {
+                "title": "OCR",
+                "width": "1"
+            },
+            "parentId": "jigxejyjnmqqyg4x",
+            "position": 1,
+            "handlers": {},
+            "visible": true
+        },
+        "mazin6bbk9vojecn": {
+            "id": "mazin6bbk9vojecn",
+            "type": "column",
+            "content": {
+                "title": "General",
+                "width": "1"
+            },
+            "parentId": "jigxejyjnmqqyg4x",
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "hvnz3rag58720guf": {
+            "id": "hvnz3rag58720guf",
+            "type": "textinput",
+            "content": {
+                "label": "Allowed characters"
+            },
+            "parentId": "wepo9e9hxf9cpzln",
+            "position": 1,
+            "handlers": {},
+            "binding": {
+                "eventType": "ss-change",
+                "stateRef": "params.easyocr.allowlist"
+            },
+            "visible": true
+        },
+        "z0z7uq4797s7ctlv": {
+            "id": "z0z7uq4797s7ctlv",
+            "type": "textinput",
+            "content": {
+                "label": "Input source"
+            },
+            "parentId": "mazin6bbk9vojecn",
+            "position": 0,
+            "handlers": {},
+            "binding": {
+                "eventType": "ss-change",
+                "stateRef": "src"
+            },
+            "visible": true
+        },
+        "gb9xnvl0g5hh1na3": {
+            "id": "gb9xnvl0g5hh1na3",
+            "type": "section",
+            "content": {
+                "title": ""
+            },
+            "parentId": "c0f99a9e-5004-4e75-a6c6-36f17490b134",
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "d60yawvysclng6vo": {
+            "id": "d60yawvysclng6vo",
+            "type": "heading",
+            "content": {
+                "text": "License Plate Recognition",
+                "headingType": "h1",
+                "alignment": "center"
+            },
+            "parentId": "gb9xnvl0g5hh1na3",
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "jqfcsuo04zq1m0g8": {
+            "id": "jqfcsuo04zq1m0g8",
+            "type": "sliderinput",
+            "content": {
+                "label": "Sorting tolerance",
+                "minValue": "0",
+                "maxValue": "1",
+                "stepSize": "0.01"
+            },
+            "parentId": "mazin6bbk9vojecn",
+            "position": 3,
+            "handlers": {},
+            "binding": {
+                "eventType": "ss-number-change",
+                "stateRef": "params.sorting_tolerance"
+            },
+            "visible": true
+        },
+        "4a5oa4s109jfb5a2": {
+            "id": "4a5oa4s109jfb5a2",
+            "type": "sliderinput",
+            "content": {
+                "label": "Minimum text percentage",
+                "minValue": "0",
+                "maxValue": "1",
+                "stepSize": "0.01"
+            },
+            "parentId": "mazin6bbk9vojecn",
+            "position": 4,
+            "handlers": {},
+            "binding": {
+                "eventType": "ss-number-change",
+                "stateRef": "params.min_text_percentage"
+            },
+            "visible": true
+        },
+        "0wf2be8896f3ts45": {
+            "id": "0wf2be8896f3ts45",
+            "type": "sliderinput",
+            "content": {
+                "label": "Text threshold",
+                "minValue": "0",
+                "maxValue": "1",
+                "stepSize": "0.01"
+            },
+            "parentId": "wepo9e9hxf9cpzln",
+            "position": 3,
+            "handlers": {},
+            "binding": {
+                "eventType": "ss-number-change",
+                "stateRef": "params.easyocr.text_threshold"
+            },
+            "visible": true
+        },
+        "wdbiyyih6esev6qo": {
+            "id": "wdbiyyih6esev6qo",
+            "type": "sliderinput",
+            "content": {
+                "label": " Text low-bound score",
+                "minValue": "0",
+                "maxValue": "1",
+                "stepSize": "0.01"
+            },
+            "parentId": "wepo9e9hxf9cpzln",
+            "position": 4,
+            "handlers": {},
+            "binding": {
+                "eventType": "ss-number-change",
+                "stateRef": "params.easyocr.low_text"
+            },
+            "visible": true
+        },
+        "frjuslp2vat7h0fb": {
+            "id": "frjuslp2vat7h0fb",
+            "type": "sliderinput",
+            "content": {
+                "label": "Link threshold",
+                "minValue": "0",
+                "maxValue": "1",
+                "stepSize": "0.01"
+            },
+            "parentId": "wepo9e9hxf9cpzln",
+            "position": 5,
+            "handlers": {},
+            "binding": {
+                "eventType": "ss-number-change",
+                "stateRef": "params.easyocr.link_threshold"
+            },
+            "visible": true
+        },
+        "gyyyco2g31mbprwy": {
+            "id": "gyyyco2g31mbprwy",
+            "type": "dropdowninput",
+            "content": {
+                "label": "Decoder",
+                "options": "{\n  \"greedy\": \"Greedy\",\n  \"beamsearch\": \"Beam Search\",\n  \"wordbeamsearch\": \"Word Beam Search\"\n}"
+            },
+            "parentId": "wepo9e9hxf9cpzln",
+            "position": 0,
+            "handlers": {},
+            "binding": {
+                "eventType": "ss-option-change",
+                "stateRef": "params.easyocr.decoder"
+            },
+            "visible": true
+        },
+        "rmpc5xismhv01f9c": {
+            "id": "rmpc5xismhv01f9c",
+            "type": "numberinput",
+            "content": {
+                "label": "Beam width",
+                "minValue": "1"
+            },
+            "parentId": "wepo9e9hxf9cpzln",
+            "position": 2,
+            "handlers": {},
+            "binding": {
+                "eventType": "ss-number-change",
+                "stateRef": "params.easyocr.beamWidth"
+            },
+            "visible": true
+        },
+        "upd0mcwnb1w6j2pi": {
+            "id": "upd0mcwnb1w6j2pi",
+            "type": "numberinput",
+            "content": {
+                "label": "Video resolution (x)",
+                "minValue": "0"
+            },
+            "parentId": "mazin6bbk9vojecn",
+            "position": 1,
+            "handlers": {},
+            "binding": {
+                "eventType": "ss-number-change",
+                "stateRef": "params.res_x"
+            },
+            "visible": true
+        },
+        "3aorleea6d9fb7a0": {
+            "id": "3aorleea6d9fb7a0",
+            "type": "numberinput",
+            "content": {
+                "label": "Video resolution (y)",
+                "minValue": "0"
+            },
+            "parentId": "mazin6bbk9vojecn",
+            "position": 2,
+            "handlers": {},
+            "binding": {
+                "eventType": "ss-number-change",
+                "stateRef": "params.res_y"
+            },
+            "visible": true
+        },
+        "4dunlat6el49ijxm": {
+            "id": "4dunlat6el49ijxm",
+            "type": "numberinput",
+            "content": {
+                "label": "Expand crop (x)"
+            },
+            "parentId": "mazin6bbk9vojecn",
+            "position": 5,
+            "handlers": {},
+            "binding": {
+                "eventType": "ss-number-change",
+                "stateRef": "params.expand_x"
+            },
+            "visible": true
+        },
+        "393ycwh3opmvooau": {
+            "id": "393ycwh3opmvooau",
+            "type": "numberinput",
+            "content": {
+                "label": "Expand crop (y)"
+            },
+            "parentId": "mazin6bbk9vojecn",
+            "position": 6,
+            "handlers": {},
+            "binding": {
+                "eventType": "ss-number-change",
+                "stateRef": "params.expand_y"
+            },
+            "visible": true
+        },
+        "8ggbp1g3uiyin1rh": {
+            "id": "8ggbp1g3uiyin1rh",
+            "type": "numberinput",
+            "content": {
+                "label": "Batch size",
+                "minValue": "1"
+            },
+            "parentId": "wepo9e9hxf9cpzln",
+            "position": 6,
+            "handlers": {},
+            "binding": {
+                "eventType": "ss-number-change",
+                "stateRef": "params.easyocr.batch_size"
+            },
+            "visible": true
+        },
+        "j4awqs6ogzrgsibo": {
+            "id": "j4awqs6ogzrgsibo",
+            "type": "button",
+            "content": {
+                "text": "Clear results"
+            },
+            "parentId": "fmjq1afd9ny4dxnj",
+            "position": 2,
+            "handlers": {
+                "ss-click": "clear_results"
+            },
+            "visible": true
+        },
+        "v7f3lr0uon4ujlv2": {
+            "id": "v7f3lr0uon4ujlv2",
+            "type": "checkboxinput",
+            "content": {
+                "label": "",
+                "options": "@{guests}"
+            },
+            "parentId": "a7uf8qq9cktutc7b",
+            "position": 0,
+            "handlers": {
+                "ss-options-change": "mark_present"
+            },
+            "binding": {
+                "eventType": "ss-options-change",
+                "stateRef": "present_guests"
+            },
+            "visible": true
+        },
+        "a7uf8qq9cktutc7b": {
+            "id": "a7uf8qq9cktutc7b",
+            "type": "section",
+            "content": {
+                "title": "Guests"
+            },
+            "parentId": "c0f99a9e-5004-4e75-a6c6-36f17490b134",
+            "position": 2,
+            "handlers": {},
+            "visible": "params.guests_list.T"
+        },
+        "ilmvjsh3nzetxtjh": {
+            "id": "ilmvjsh3nzetxtjh",
+            "type": "column",
+            "content": {
+                "title": "Guest attendance",
+                "width": "1"
+            },
+            "parentId": "jigxejyjnmqqyg4x",
+            "position": 2,
+            "handlers": {},
+            "visible": true
+        },
+        "delgowsolsnxob60": {
+            "id": "delgowsolsnxob60",
+            "type": "sliderinput",
+            "content": {
+                "label": "Similarity threshold",
+                "minValue": "0",
+                "maxValue": "100",
+                "stepSize": "1"
+            },
+            "parentId": "ilmvjsh3nzetxtjh",
+            "position": 2,
+            "handlers": {},
+            "binding": {
+                "eventType": "ss-number-change",
+                "stateRef": "params.similarity"
+            },
+            "visible": true
+        },
+        "zsxiegg7nmuc5pzf": {
+            "id": "zsxiegg7nmuc5pzf",
+            "type": "textinput",
+            "content": {
+                "label": "Attendance App URL"
+            },
+            "parentId": "ilmvjsh3nzetxtjh",
+            "position": 0,
+            "handlers": {},
+            "binding": {
+                "eventType": "ss-change",
+                "stateRef": "params.url"
+            },
+            "visible": true
+        },
+        "gp73y7t9qlm75nt0": {
+            "id": "gp73y7t9qlm75nt0",
+            "type": "textinput",
+            "content": {
+                "label": "Location"
+            },
+            "parentId": "ilmvjsh3nzetxtjh",
+            "position": 1,
+            "handlers": {},
+            "binding": {
+                "eventType": "ss-change",
+                "stateRef": "params.location"
+            },
+            "visible": true
+        },
+        "nl9vijg4wz86869x": {
+            "id": "nl9vijg4wz86869x",
+            "type": "horizontalstack",
+            "content": {},
+            "parentId": "ilmvjsh3nzetxtjh",
+            "position": 3,
+            "handlers": {},
+            "visible": true
+        },
+        "q36yquxja5zfhd09": {
+            "id": "q36yquxja5zfhd09",
+            "type": "horizontalstack",
+            "content": {},
+            "parentId": "ilmvjsh3nzetxtjh",
+            "position": 4,
+            "handlers": {},
+            "visible": true
+        },
+        "e7glns4lk4dksmac": {
+            "id": "e7glns4lk4dksmac",
+            "type": "button",
+            "content": {
+                "text": "Enable guest list",
+                "isDisabled": "@{params.guests_list.0}"
+            },
+            "parentId": "nl9vijg4wz86869x",
+            "position": 0,
+            "handlers": {
+                "ss-click": "ui_guests_list"
+            },
+            "visible": true
+        },
+        "5gq1o0ve1s3ce1fd": {
+            "id": "5gq1o0ve1s3ce1fd",
+            "type": "button",
+            "content": {
+                "text": "Disable guest list",
+                "isDisabled": "@{params.guests_list.1}"
+            },
+            "parentId": "nl9vijg4wz86869x",
+            "position": 1,
+            "handlers": {
+                "ss-click": "ui_guests_list_not"
+            },
+            "visible": true
+        },
+        "gk2ii509h1227b9a": {
+            "id": "gk2ii509h1227b9a",
+            "type": "button",
+            "content": {
+                "text": "Send data",
+                "isDisabled": "@{params.send.0}"
+            },
+            "parentId": "q36yquxja5zfhd09",
+            "position": 0,
+            "handlers": {
+                "ss-click": "ui_send"
+            },
+            "visible": true
+        },
+        "3jupg395m5sma86x": {
+            "id": "3jupg395m5sma86x",
+            "type": "button",
+            "content": {
+                "text": "Don't send data",
+                "isDisabled": "@{params.send.1}"
+            },
+            "parentId": "q36yquxja5zfhd09",
+            "position": 1,
+            "handlers": {
+                "ss-click": "ui_send_not"
+            },
+            "visible": true
+        },
+        "8xef330h3c7bv6se": {
+            "id": "8xef330h3c7bv6se",
+            "type": "button",
+            "content": {
+                "text": "Connect Guests"
+            },
+            "parentId": "fmjq1afd9ny4dxnj",
+            "position": 3,
+            "handlers": {
+                "ss-click": "connect"
+            },
+            "visible": true
+        },
+        "bhkc55asuayrhcw2": {
+            "id": "bhkc55asuayrhcw2",
+            "type": "numberinput",
+            "content": {
+                "label": "Font scale"
+            },
+            "parentId": "mazin6bbk9vojecn",
+            "position": 7,
+            "handlers": {},
+            "binding": {
+                "eventType": "ss-number-change",
+                "stateRef": "params.font_scale"
+            },
+            "visible": true
+        }
+    }
+}

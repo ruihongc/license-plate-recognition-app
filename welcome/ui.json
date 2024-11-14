@@ -1,0 +1,229 @@
+{
+    "metadata": {
+        "streamsync_version": "0.4.0"
+    },
+    "components": {
+        "root": {
+            "id": "root",
+            "type": "root",
+            "content": {
+                "appName": "Welcome"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "c0f99a9e-5004-4e75-a6c6-36f17490b134": {
+            "id": "c0f99a9e-5004-4e75-a6c6-36f17490b134",
+            "type": "page",
+            "content": {
+                "pageMode": "wide",
+                "emptinessColor": "#e9eef1"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "root",
+            "handlers": {},
+            "visible": true
+        },
+        "5imp537ns0mhpysi": {
+            "id": "5imp537ns0mhpysi",
+            "type": "section",
+            "content": {
+                "title": ""
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "c0f99a9e-5004-4e75-a6c6-36f17490b134",
+            "handlers": {},
+            "visible": true
+        },
+        "2vl3mr3jhf2pahz8": {
+            "id": "2vl3mr3jhf2pahz8",
+            "type": "heading",
+            "content": {
+                "text": "@{message}",
+                "headingType": "h1",
+                "alignment": "center"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "ik4nsjbojcfywpsm",
+            "handlers": {},
+            "visible": true
+        },
+        "0ktr3vlhit8z0ug2": {
+            "id": "0ktr3vlhit8z0ug2",
+            "type": "columns",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 2,
+            "parentId": "5imp537ns0mhpysi",
+            "handlers": {},
+            "visible": true
+        },
+        "ik4nsjbojcfywpsm": {
+            "id": "ik4nsjbojcfywpsm",
+            "type": "column",
+            "content": {
+                "width": "1",
+                "contentVAlign": "center"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "0ktr3vlhit8z0ug2",
+            "handlers": {},
+            "visible": true
+        },
+        "p7w4zdt41cn6hkfx": {
+            "id": "p7w4zdt41cn6hkfx",
+            "type": "timer",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "c0f99a9e-5004-4e75-a6c6-36f17490b134",
+            "handlers": {
+                "ss-tick": "get_update"
+            },
+            "visible": true
+        },
+        "prype6ks8aqr21qi": {
+            "id": "prype6ks8aqr21qi",
+            "type": "heading",
+            "content": {
+                "text": "Welcome to",
+                "headingType": "h2",
+                "alignment": "center"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "5imp537ns0mhpysi",
+            "handlers": {},
+            "visible": true
+        },
+        "gqibjdatwmuodr0h": {
+            "id": "gqibjdatwmuodr0h",
+            "type": "heading",
+            "content": {
+                "text": "6 Division / HQ Sense & Strike Workplan Seminar 24",
+                "headingType": "h2",
+                "alignment": "center"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "5imp537ns0mhpysi",
+            "handlers": {},
+            "visible": true
+        },
+        "ismfcgvtouqooki9": {
+            "id": "ismfcgvtouqooki9",
+            "type": "heading",
+            "content": {
+                "text": "@{categories}",
+                "headingType": "h2",
+                "alignment": "center"
+            },
+            "isCodeManaged": false,
+            "position": 3,
+            "parentId": "5imp537ns0mhpysi",
+            "handlers": {},
+            "visible": true
+        },
+        "ydifh4zxkddt3dir": {
+            "id": "ydifh4zxkddt3dir",
+            "type": "image",
+            "parentId": "eo3ejsctxyk79yrl",
+            "content": {
+                "src": "./static/logo.png",
+                "caption": "",
+                "maxWidth": "50",
+                "maxHeight": "50"
+            },
+            "handlers": {},
+            "position": 0,
+            "visible": true
+        },
+        "eo3ejsctxyk79yrl": {
+            "id": "eo3ejsctxyk79yrl",
+            "type": "horizontalstack",
+            "parentId": "5imp537ns0mhpysi",
+            "content": {
+                "contentHAlign": "center"
+            },
+            "handlers": {},
+            "position": 4,
+            "visible": true
+        },
+        "ci6juqi47fc8ggza": {
+            "id": "ci6juqi47fc8ggza",
+            "type": "image",
+            "parentId": "eo3ejsctxyk79yrl",
+            "content": {
+                "src": "./static/logo.png",
+                "caption": "",
+                "maxWidth": "50",
+                "maxHeight": "50"
+            },
+            "handlers": {},
+            "position": 1,
+            "visible": true
+        },
+        "iojehckz4yln9byw": {
+            "id": "iojehckz4yln9byw",
+            "type": "image",
+            "parentId": "eo3ejsctxyk79yrl",
+            "content": {
+                "src": "./static/logo.png",
+                "caption": "",
+                "maxWidth": "50",
+                "maxHeight": "50"
+            },
+            "handlers": {},
+            "position": 2,
+            "visible": true
+        },
+        "8atgbhz5fgx57lr5": {
+            "id": "8atgbhz5fgx57lr5",
+            "type": "image",
+            "parentId": "eo3ejsctxyk79yrl",
+            "content": {
+                "src": "./static/logo.png",
+                "caption": "",
+                "maxWidth": "50",
+                "maxHeight": "50"
+            },
+            "handlers": {},
+            "position": 3,
+            "visible": true
+        },
+        "ygyjgxi171kkyji4": {
+            "id": "ygyjgxi171kkyji4",
+            "type": "image",
+            "parentId": "eo3ejsctxyk79yrl",
+            "content": {
+                "src": "./static/logo.png",
+                "caption": "",
+                "maxWidth": "50",
+                "maxHeight": "50"
+            },
+            "handlers": {},
+            "position": 4,
+            "visible": true
+        },
+        "3w4qhxsti7cltjl5": {
+            "id": "3w4qhxsti7cltjl5",
+            "type": "image",
+            "parentId": "eo3ejsctxyk79yrl",
+            "content": {
+                "src": "./static/logo.png",
+                "caption": "",
+                "maxWidth": "50",
+                "maxHeight": "50"
+            },
+            "handlers": {},
+            "position": 5,
+            "visible": true
+        }
+    }
+}
