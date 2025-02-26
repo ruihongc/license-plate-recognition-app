@@ -159,7 +159,6 @@ def play(state):
                                             cv2.FONT_HERSHEY_SIMPLEX,
                                             font_scale, (0, 0, 0), 2)
                                     if send:
-                                        ws.send(f"{name},✓")
                                         send_data(url, name, location)
                                     # send data
                                 else:
@@ -221,13 +220,11 @@ def mark_present(state):
     for i in attendance:
         if (i in state["present_guests"]):
             if (attendance[i] != "✓"):
-                send_data(str(state["params"]["url"]), i, str(state["params"]["location"]))
+                if (state["params"]["send"]["0"] == "yes"):
+                    send_data(str(state["params"]["url"]), i, str(state["params"]["location"]))
                 attendance[i] = "✓"
-                ws.send(f"{i},✓")
         elif (attendance[i] != ""):
             attendance[i] = ""
-            ws.send(f"{i},")
-    
 
 def ui_guests_list(state):
     state["params"]["guests_list"] = {
@@ -284,8 +281,8 @@ initial_state = ss.init_state({
             "T": True,
         },
         "send": {
-            "0": "yes",
-            "1": "no",
+            "0": "no",
+            "1": "yes",
         },
         "url": "http://0.0.0.0:8080/detections",
         "location": "Entrance",
@@ -293,37 +290,6 @@ initial_state = ss.init_state({
     "guests": guests,
     "present_guests": [],
 })
-
-import websocket
-import threading
-from time import sleep
-websocket.enableTrace(False)
-
-def on_message(ws, message):
-    pass
-
-def on_close(ws, two, three):
-    sleep(1)
-    connect(None)
-
-def connect(state):
-    global ws
-    ws = websocket.WebSocketApp("ws://0.0.0.0:3005/ws", on_open = on_open, on_message = on_message, on_close = on_close)
-    wst = threading.Thread(target=ws.run_forever)
-    wst.daemon = True
-    wst.start()
-    try:
-        ws.send(f"app")
-    except:
-        pass
-
-def on_open(ws):
-    try:
-        ws.send(f"app")
-    except:
-        pass
-
-connect(None)
 
 if torch.cuda.is_available():
     initial_state.add_notification("success", "CUDA is available", "CUDA is available. Using the GPU mode.")
