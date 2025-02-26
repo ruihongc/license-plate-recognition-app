@@ -221,7 +221,8 @@ def mark_present(state):
     for i in attendance:
         if (i in state["present_guests"]):
             if (attendance[i] != "✓"):
-                send_data(str(state["params"]["url"]), i, str(state["params"]["location"]))
+                if (state["params"]["send"]["0"] == "yes"):
+                    send_data(str(state["params"]["url"]), i, str(state["params"]["location"]))
                 attendance[i] = "✓"
                 ws.send(f"{i},✓")
         elif (attendance[i] != ""):
@@ -284,8 +285,8 @@ initial_state = ss.init_state({
             "T": True,
         },
         "send": {
-            "0": "yes",
-            "1": "no",
+            "0": "no",
+            "1": "yes",
         },
         "url": "http://0.0.0.0:8080/detections",
         "location": "Entrance",
